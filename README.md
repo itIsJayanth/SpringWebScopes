@@ -1,1 +1,1 @@
-This application Demostrates who Web specific  scopes behave with detail code
+This application Demostrates web specific  scopes behave with detail code
