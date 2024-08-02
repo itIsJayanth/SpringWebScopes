@@ -15,24 +15,22 @@ import com.wipro.model.RequestScopeDemo;
 
 @Controller
 public class ApplicationController {
-	
+
 	@Autowired
 	private ApplicationScopeDemo demo;
-	
+
 	@GetMapping("/testingApplication1")
 	public void display(HttpServletResponse response) throws IOException {
-		
-		response.getWriter().write("Default name : "+demo.getName());
+		System.out.println("Your INsisde the APplication Controller");
+		response.getWriter().write("Default name : " + demo.getName());
 		demo.setName("CONTROLLER-NAME ");
-		response.getWriter().write(" New name : "+demo.getName());
+		response.getWriter().write(" New name : " + demo.getName());
 	}
-	
-	
-	
+
 	@GetMapping("/testingApplication2")
 	public void display2(HttpServletResponse response) throws IOException {
-		
-		response.getWriter().write("New name : "+demo.getName());
+
+		response.getWriter().write("New name : " + demo.getName());
 	}
 
 }
