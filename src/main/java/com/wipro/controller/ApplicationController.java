@@ -22,6 +22,7 @@ public class ApplicationController {
 	@GetMapping("/testingApplication1")
 	public void display(HttpServletResponse response) throws IOException {
 		System.out.println("Your INsisde the APplication Controller");
+		System.out.println("Inside the Feature Application Controller");
 		response.getWriter().write("Default name : " + demo.getName());
 		demo.setName("CONTROLLER-NAME ");
 		response.getWriter().write(" New name : " + demo.getName());
