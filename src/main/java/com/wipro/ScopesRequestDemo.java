@@ -9,7 +9,7 @@ public class ScopesRequestDemo {
 
 	public static void main(String[] args) {
 		SpringApplication.run(ScopesRequestDemo.class, args);
-
+		System.out.println("Application Started");
 	}
 
 }
